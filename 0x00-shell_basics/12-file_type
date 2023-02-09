@@ -1,1 +1,2 @@
-#!/bin/bash\nfile -f /tmp/iamafile
+#!/bin/bash
+file -f /tmp/iamafile
