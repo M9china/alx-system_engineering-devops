@@ -1,2 +1,2 @@
 #!/bin/bash
-cp -un *.html../
+cp -un *.html../0x000-shell_basics/alx-system_engineering-devops
