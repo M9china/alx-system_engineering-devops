@@ -1,2 +1,2 @@
 #!/bin/bash
-sort | ls -n 10 | head
+ls -lt | head -n 10
