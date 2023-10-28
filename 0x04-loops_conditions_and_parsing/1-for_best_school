@@ -1,4 +1,4 @@
 #!/usr/bin/env bash
-
+# prints text 10 times
 for ((count=0; count<10; count++)); do echo "Best School"
 done
