@@ -1,0 +1,14 @@
+#!/usr/bin/env bash
+# Kills the 7-highlander process
+
+if [ -f 7-highlander.pid ]; then
+  pid=$(cat 7-highlander.pid)
+  if [ -n "$pid" ] && ps -p "$pid" > /dev/null; then
+    echo "Killing the 7-highlander process (PID: $pid)"
+    kill -SIGTERM "$pid"
+  else
+    echo "7-highlander process is not running."
+  fi
+else
+  echo "7-highlander process is not running."
+fi
