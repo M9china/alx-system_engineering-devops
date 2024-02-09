@@ -5,11 +5,3 @@ sudo apt-get -y update
 sudo apt-get -y install nginx
 echo "Hello World!" | sudo tee /var/www/html/index.html
 sudo service nginx start
-
-# Check if Nginx returns a webpage and HTTP 200 on port 80
-curl_result=$(curl -s -o /dev/null -w "%{http_code}" http://localhost)
-if [ "$curl_result" -eq 200 ]; then
-    echo "Nginx successfully running with HTTP 200 on port 80."
-else
-    echo "Error: Nginx did not return HTTP 200 on port 80."
-fi
