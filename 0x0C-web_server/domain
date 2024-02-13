@@ -1,21 +1,74 @@
 {
-   "domainName": "m9-china.bit",
-   "parseCode": 0,
+   "domainName": "m9-china.tech",
+   "parseCode": 8,
    "audit": {
-      "createdDate": "2023-12-08 12:52:38 UTC",
-      "updatedDate": "2023-12-08 12:52:38 UTC"
+      "createdDate": "2024-02-13 12:37:11 UTC",
+      "updatedDate": "2024-02-13 12:37:11 UTC"
    },
-   "dataError": "INVALID_TLD",
+   "registrarName": "Dotserve Inc",
+   "registrarIANAID": "1913",
    "registryData": {
-      "domainName": "m9-china.bit",
-      "parseCode": 64,
-      "audit": {
-         "createdDate": "2023-12-08 12:52:38 UTC",
-         "updatedDate": "2023-12-08 12:52:38 UTC"
+      "createdDate": "2024-01-29T20:24:29.0Z",
+      "updatedDate": "2024-02-09T00:59:36.0Z",
+      "expiresDate": "2025-01-29T23:59:59.0Z",
+      "registrant": {
+         "organization": "N/A",
+         "state": "3722",
+         "country": "SOUTH AFRICA",
+         "countryCode": "ZA",
+         "rawText": "(omitted in the demo)"
       },
-      "dataError": "INVALID_TLD",
-      "whoisServer": "whois.nic.bit"
+      "administrativeContact": {
+         "country": "SOUTH AFRICA",
+         "countryCode": "ZA",
+         "rawText": "(omitted in the demo)"
+      },
+      "billingContact": {
+         "country": "SOUTH AFRICA",
+         "countryCode": "ZA",
+         "rawText": "(omitted in the demo)"
+      },
+      "technicalContact": {
+         "country": "SOUTH AFRICA",
+         "countryCode": "ZA",
+         "rawText": "(omitted in the demo)"
+      },
+      "domainName": "m9-china.tech",
+      "nameServers": {
+         "rawText": "(omitted in the demo)",
+         "hostNames": [
+            "CONT603385.VENUS.ORDERBOX-DNS.COM",
+            "CONT603385.MERCURY.ORDERBOX-DNS.COM",
+            "CONT603385.MARS.ORDERBOX-DNS.COM",
+            "CONT603385.EARTH.ORDERBOX-DNS.COM"
+         ],
+         "ips": []
+      },
+      "status": "(omitted in the demo)",
+      "rawText": "(omitted in the demo)",
+      "parseCode": 4091,
+      "header": "(omitted in the demo)",
+      "strippedText": "(omitted in the demo)",
+      "footer": "(omitted in the demo)",
+      "audit": {
+         "createdDate": "2024-02-13 12:37:11 UTC",
+         "updatedDate": "2024-02-13 12:37:11 UTC"
+      },
+      "customField1Name": "RegistrarContactEmail",
+      "customField1Value": "abuse@dotserve.website",
+      "registrarName": "Dotserve Inc",
+      "registrarIANAID": "1913",
+      "createdDateNormalized": "2024-01-29 20:24:29 UTC",
+      "updatedDateNormalized": "2024-02-09 00:59:36 UTC",
+      "expiresDateNormalized": "2025-01-29 23:59:59 UTC",
+      "customField2Name": "RegistrarContactPhone",
+      "customField3Name": "RegistrarURL",
+      "customField2Value": "+1.4154494774",
+      "customField3Value": "http://dotserve.website",
+      "whoisServer": "whois.dotserve.website"
    },
-   "domainAvailability": "AVAILABLE",
-   "domainNameExt": ".bit"
+   "domainAvailability": "UNAVAILABLE",
+   "contactEmail": "abuse@dotserve.website",
+   "domainNameExt": ".tech",
+   "estimatedDomainAge": 14
 }
