@@ -6,7 +6,6 @@ NOT_FOUND_PAGE_CONTENT="Ceci n'est pas une page"
 
 sudo apt-get -y update
 sudo apt-get -y install nginx
-sudo chown -R ubuntu /var/www
 echo "Hello World!" | sudo tee /var/www/html/index.html
 echo "$NOT_FOUND_PAGE_CONTENT" | sudo tee /var/www/html/404.html
 sudo sed -i "/^ location \/ \{$/a \ \ \ \ error_page 404 /404.html;\n" /etc/nginx/sites-available/default
