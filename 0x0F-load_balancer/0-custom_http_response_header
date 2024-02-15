@@ -20,7 +20,7 @@ if [[ -z $FIND ]]; then
     sed -i "23i $HEADER" /etc/nginx/sites-available/default
 fi
 sudo echo "Hello World!" > /var/www/html/index.html
-sudi touch /var/www/html/404.html
+sudo touch /var/www/html/404.html
 sudo echo "Ceci n'est pas une page" > /var/www/html/404.html
 
 printf %s "server {
