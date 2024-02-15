@@ -1,5 +1,42 @@
 #!/usr/bin/env bash
-#configure nginx server to listen on port 80
 
+# Configure nginx server to listen on port 80
 sed -i 's/8080/80/g' /etc/nginx/sites-enabled/default
+
+# Restart Nginx
 service nginx restart
+
+# Create a simple HTML file in the document root
+echo "<!DOCTYPE html>
+<html>
+<head>
+<title>Welcome to nginx!</title>
+<style>
+    body {
+        width: 35em;
+        margin: 0 auto;
+        font-family: Tahoma, Verdana, Arial, sans-serif;
+    }
+</style>
+</head>
+<body>
+<h1>Welcome to nginx!</h1>
+<p>If you see this page, the nginx web server is successfully installed and
+working. Further configuration is required.</p>
+
+<p>For online documentation and support please refer to
+<a href="http://nginx.org/">nginx.org</a>.<br/>
+Commercial support is available at
+<a href="http://nginx.com/">nginx.com</a>.</p>
+
+<p><em>Thank you for using nginx.</em></p>
+</body>
+</html>" > /usr/share/nginx/html/index.html
+
+# Verify Nginx returns a web page with HTTP 200 on port 80
+response=$(curl -s -I http://localhost)
+if [[ "$response" =~ "HTTP/1.1 200 OK" ]]; then
+    echo "Nginx is configured successfully. Web page returned with HTTP 200."
+else
+    echo "Error: Nginx configuration may not be correct. Check the Nginx error logs for more information."
+fi
