@@ -16,8 +16,8 @@ rewrite ^/redirect_me https://github.com/M9china/ permanent;
     try_files $uri $uri/ =404;
   }
 
-  location = /airbnb-onepage/ {
+  location /airbnb-onepage/ {
     proxy_set_header X-Forwarded-For $proxy_add_x_forwarded_for;
-    proxy_pass http://18.207.207.212:5000/airbnb-onepage;
+    proxy_pass http://127.0.0.1:5000/airbnb-onepage/;
   }
 }
