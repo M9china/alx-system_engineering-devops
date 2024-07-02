@@ -8,7 +8,7 @@ rewrite ^/redirect_me https://github.com/M9china/ permanent;
   # Add index.php to the list if you are using PHP
   index index.html index.htm index.nginx-debian.html;
 
-  server_name 18.207.207.212;
+  server_name 54.209.89.201;
 
   location / {
     # First attempt to serve request as file, then
