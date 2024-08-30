@@ -10,8 +10,8 @@ echo " frontend requests
 
 backend web_servers
 	balance roundrobin
-	server 266716-web-01 18.207.207.212:80 check
-	server 266716-web-02 100.26.154.255:80 check
+	server 266716-web-01 34.229.68.238:80 check
+	server 266716-web-02 54.226.39.102:80 check
 " | sudo tee /etc/haproxy/haproxy.cfg
 
 sudo service haproxy restart
